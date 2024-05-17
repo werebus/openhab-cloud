@@ -13,7 +13,6 @@
     "@xmpp/debug": "^0.12.0",
     "apns2": "^9.3.0",
     "bcrypt": "^5.0.1",
-    "bcrypt-cache": "^2.0.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "chokidar": "3.5.1",
