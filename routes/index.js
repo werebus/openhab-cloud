@@ -15,9 +15,11 @@ var system = require('../system'),
     setSessionTimezone = require('./setTimezone'),
     androidRegistrationService = require('./androidRegistrationService'),
     appleRegistrationService = require('./appleRegistrationService'),
-    ifttt_routes = require('./ifttt'),
     redis = require('../redis-helper');
 
+if (!system.isIFTTTEnabled()) {
+    var ifttt_routes = require('./ifttt');
+}
 /**
  * Constructs the Routes object.
  *
