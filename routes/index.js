@@ -17,7 +17,7 @@ var system = require('../system'),
     appleRegistrationService = require('./appleRegistrationService'),
     redis = require('../redis-helper');
 
-if (!system.isIFTTTEnabled()) {
+if (system.isIFTTTEnabled()) {
     var ifttt_routes = require('./ifttt');
 }
 /**
